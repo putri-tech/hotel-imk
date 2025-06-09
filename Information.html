@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hotel Booking - Information</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+  /* Container utama bagian info-section */
+.info-section {
+  background-image: url('main-1.png'); /* ganti dengan nama file gambar kamu */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+}
+
+/* Kontainer kiri About Us */
+.container-left {
+  flex: 3;
+  background-color: rgba(10, 10, 10, 0.6);
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Kontainer kanan Facilities */
+.container-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  background-color: white; /* background putih full container */
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Header judul Facilities dengan background gelap full lebar container */
+.facilities-header {
+  background-color: rgba(10, 10, 10, 0.6);
+  color: white;
+  padding: 20px;
+}
+
+/* Konten fasilitas (gambar) */
+.facilities-content {
+  padding: 20px;
+  /* background putih sudah di container-right */
+  flex-grow: 1;
+}
+
+/* Grid gambar fasilitas */
+.facility-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+/* Styling gambar fasilitas */
+.facility-grid img {
+  width: 100%;
+  height: 150px;         /* tinggi tetap supaya semua sama */
+  object-fit: cover;     /* supaya gambar tidak melar dan memenuhi area */
+  display: block;
+}
+
+/* Judul umum */
+.info-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Gambar About Us */
+.info-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+/* Overlay teks di gambar About Us */
+.content-box {
+  position: relative;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 33%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 0 0 8px 8px;
+}
+
+.facilities-description {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+
+</style>
+
+</head>
+<body>
+
+  <main>
+    <section class="info-section">
+      <!-- Kontainer Kiri (About Us) -->
+      <div class="container-left">
+        <h2 class="info-title">About Us</h2>
+        <div class="content-box">
+          <img src="about.png" alt="About Us" class="info-image" />
+          <div class="overlay-text">
+            Hotel Mewah adalah tempat menginap terbaik untuk kenyamanan dan kemewahan Anda.
+          </div>
+        </div>
+      </div>
+
+      <!-- Kontainer Kanan (Facilities) -->
+      <div class="container-right">
+  <div class="facilities-header">
+    <h2 class="info-title">Facilities</h2>
+  </div>
+  <div class="facilities-content">
+  <div class="facility-grid">
+    <img src="bathub.jpg" alt="Facility 1" />
+    <img src="yoga.jpeg" alt="Facility 2" />
+    <img src="balcon.jpg" alt="Facility 3" />
+    <img src="bar.jpg" alt="Facility 4" />
+    <img src="gym.jpg" alt="Facility 5" />
+    <img src="pool.jpg" alt="Facility 6" />
+  </div>
+  <div class="facilities-description">
+    <p>
+      Kami menyediakan berbagai fasilitas mewah seperti bathtub modern, area yoga yang menenangkan, balkon pribadi dengan pemandangan indah, bar eksklusif, gym dengan peralatan lengkap, dan kolam renang infinity untuk pengalaman menginap terbaik Anda.
+    </p>
+  </div>
+</div>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Hotel Mewah</p>
+  </footer>
+</body>
+</html>

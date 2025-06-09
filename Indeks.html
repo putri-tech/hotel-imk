@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contoh Header</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* === Footer Umum === */
+  footer {
+      background-color: #1a1a1a;
+      padding: 70px 30px;
+      color: white;
+  }
+
+  /* === Kontainer Isi Footer === */
+  .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start; /* Konten sejajar atas */
+      padding: 0 30px;
+  }
+
+  /* === Jarak Manual Antar Kolom (gunakan margin-right) === */
+  .footer-content > .brand {
+    margin-left: 30px;
+    margin-right: 300px; /* Jarak ke navigation */
+  }
+
+  .footer-content > .navigation {
+      margin-right: 0; /* Jarak ke contact */
+  }
+
+  .footer-content > .contact {
+      margin-right: 5px; /* Jarak ke newsletter */
+  }
+
+  .footer-content > .newsletter {
+      margin-right: 0; /* Tidak perlu margin, kolom terakhir */
+  }
+
+  /* === Batasan Umum Tiap Kolom === */
+  .footer-content > div {
+      flex: 1;
+      min-width: 200px;
+      max-width: 280px; /* Untuk mencegah kolom terlalu lebar */
+  }
+
+  /* === Heading dan List === */
+  .footer-content h3,
+  .footer-content h4 {
+      margin: 0 0 8px 0;
+  }
+
+  .footer-content ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+  }
+
+  .footer-content ul li {
+      margin-bottom: 5px;
+  }
+
+  /* === Newsletter Input dan Tombol === */
+  .newsletter input[type="email"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 8px;
+  }
+
+  .newsletter button {
+      background-color: crimson;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+  }
+
+  /* === Copyright === */
+  .copyright {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 12px;
+      color: #aaa;
+  }
+
+  /* === Brand Section: Logo dan Teks === */
+  .brand {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .brand-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+  }
+
+  .brand-logo {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      background-color: white;
+      /* Tidak bulat */
+  }
+
+  .brand-text {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .brand-text h3 {
+      font-size: 18px;
+      margin: 0;
+  }
+
+  .brand-text p {
+      font-size: 14px;
+      margin: 4px 0 0 0; /* Jarak pendek antar teks */
+  }
+
+  /* === Sosial Media Ikon === */
+  .socials-img {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+      margin-left: 72px; /* Sejajar kiri dengan teks */
+  }
+
+  .socials-img img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      object-fit: cover;
+  }
+
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+  <div class="logo">
+    <img src="logo.png" alt="Logo" />
+  </div>
+  <div class="site-text">
+    <h1>Puramevi Hotel</h1>
+    <p>Because every family deserves a peaceful escape.</p>
+  </div>
+</header>
+
+<nav class="navbar">
+  <ul class="nav-menu">
+    <li><a href="Indeks.html">Home</a></li>
+    <li><a href="KamarHotel.html">Hotel Room</a></li>
+    <li><a href="Keranjang.html">Order Cart</a></li>
+    <li><a href="Information.html">Information</a></li>
+  </ul>
+</nav>
+
+
+<section class="latar-awal">
+  <img src="main-1.png" alt="Latar Gambar" />
+  <div class="overlay"></div>
+  <div class="search-bar">
+    <input type="text" />
+    <button type="submit">Search</button>
+  </div>
+</section>
+
+<section class="hero-section">
+  <button class="nav-arrow left-arrow" aria-label="Scroll Left">&gt;</button>
+  <div class="hero-slider" id="slider">
+    <div class="slides-small">
+      <div class="hero-slide">
+        <img src="bathub.jpg" alt="Slide 1" />
+        <div class="img-label">Kamar Mandi Mewah</div>
+      </div>
+      <div class="hero-slide">
+        <img src="balcon.jpg" alt="Slide 2" />
+        <div class="img-label">Pemandangan Balkon</div>
+      </div>
+      <div class="hero-slide">
+        <img src="bar.jpg" alt="Slide 3" />
+        <div class="img-label">Bar & Lounge</div>
+      </div>
+      <div class="hero-slide">
+        <img src="gym.jpg" alt="Slide 4" />
+        <div class="img-label">Fitness Center</div>
+      </div>
+      <div class="hero-slide">
+        <img src="pool.jpg" alt="Slide 5" />
+        <div class="img-label">Kolam Renang</div>
+      </div>
+      <div class="hero-slide">
+        <img src="yoga.jpeg" alt="Slide 6" />
+        <div class="img-label">Kelas Yoga</div>
+      </div>
+    </div>
+    <div class="slide-wide-container">
+      <div class="hero-slide hero-slide-wide">
+        <img src="long-image.jpg" alt="Wide Slide" />
+        <div class="img-label">Suite Mewah</div>
+      </div>
+    </div>
+  </div>
+  <button class="nav-arrow right-arrow" aria-label="Scroll Right">&gt;</button>
+</section>
+
+<script>
+ const leftArrow = document.querySelector('.left-arrow');
+const rightArrow = document.querySelector('.right-arrow');
+const slidesSmall = document.querySelector('.slides-small');
+const slideWideContainer = document.querySelector('.slide-wide-container');
+
+let showingWide = false;
+
+function toggleSlides() {
+  if (showingWide) {
+    slideWideContainer.style.display = 'none';
+    slidesSmall.style.display = 'flex';
+    showingWide = false;
+  } else {
+    slidesSmall.style.display = 'none';
+    slideWideContainer.style.display = 'block';
+    showingWide = true;
+  }
+}
+
+rightArrow.addEventListener('click', () => {
+  toggleSlides();
+});
+
+leftArrow.addEventListener('click', () => {
+  toggleSlides();
+});
+</script>
+
+
+<section class="diskon-hero">
+  <h2>Destinasi Terbaik</h2>
+  <div class="destination-grid">
+
+    <div class="card">
+      <div class="image-wrapper">
+        <img src="diskon-1.jpg" alt="Destination 1">
+        <div class="label-top">20%</div>
+      </div>
+      <div class="label-bottom">
+        <div class="title">SUPERIOR</div>
+        <div class="description">Tree Single Bed</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="image-wrapper">
+        <img src="diskon-2.jpg" alt="Destination 2">
+        <!-- card ini tanpa label-top -->
+      </div>
+      <div class="label-bottom">
+        <div class="title">Danau Tenang</div>
+        <div class="description">Pemandangan magis.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="image-wrapper">
+        <img src="diskon-3.jpg" alt="Destination 3">
+        <div class="label-top">25%</div>
+      </div>
+      <div class="label-bottom">
+        <div class="title">Perbukitan Hijau</div>
+        <div class="description">Yang sejuk dan indah.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="image-wrapper">
+        <img src="diskon-4.jpg" alt="Destination 4">
+        <!-- card ini tanpa label-top -->
+      </div>
+      <div class="label-bottom">
+        <div class="title">Danau Tenang</div>
+        <div class="description">Pemandangan magis.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="image-wrapper">
+        <img src="diskon-5.jpg" alt="Destination 5">
+        <div class="label-top">25%</div>
+      </div>
+      <div class="label-bottom">
+        <div class="title">Air Terjun Tinggi</div>
+        <div class="description">Menyegarkan dan alami.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="image-wrapper">
+        <img src="diskon-6.jpg" alt="Destination 5">
+        <div class="label-top">10%</div>
+      </div>
+      <div class="label-bottom">
+        <div class="title">Air Terjun Tinggi</div>
+        <div class="description">Menyegarkan dan alami.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <div class="brand">
+            <div class="brand-top">
+                <img src="logo-footer.jpg" alt="Logo" class="brand-logo">
+                <div class="brand-text">
+                    <h3>Puramevi Hotel</h3>
+                    <p>Be Part of the Puramevi Experience</p>
+                </div>
+            </div>
+            <div class="socials-img">
+                <img src="Instagram.png" alt="Icon 1">
+                <img src="Tiktok.jpg" alt="Icon 2">
+            </div>
+        </div>
+
+        <div class="navigation">
+            <h4>Navigation</h4>
+            <ul>
+                <li>Home Page</li>
+                <li>Hotel Room</li>
+                <li>Order Cart</li>
+                <li>Information</li>
+            </ul>
+        </div>
+
+        <div class="contact">
+            <h4>Contact</h4>
+            <p>Call: 0891-7799-990</p>
+            <p>Puramevihotel@hotel.com</p>
+            <p>Jl. Danau Indah Block A</p>
+        </div>
+
+        <div class="newsletter">
+            <h4>Get the latest information</h4>
+            <input type="email" placeholder="Enter email">
+            <button>Send email</button>
+        </div>
+    </div>
+
+    <div class="copyright">
+        &copy; Puramevi Hotel 2025. All Right Reserved
+    </div>
+</footer>
+
+</body>
+</html>

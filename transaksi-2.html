@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Halaman Berhasil Transaksi</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #2c2c2c;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      padding: 10px 20px;
+      background-color: #1a1a1a;
+      color: #ccc;
+      font-size: 14px;
+    }
+    .top-bar {
+      background: white;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+    }
+    .top-bar a {
+      text-decoration: none;
+      color: black;
+      margin-right: 10px;
+    }
+    .background {
+      background-image: url('hotel.jpg'); /* ganti sesuai gambar Anda */
+      background-size: cover;
+      background-position: center;
+      min-height: 500px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 60px;
+    }
+    .card {
+      background: white;
+      width: 360px;
+      padding: 30px 20px;
+      text-align: center;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      position: relative;
+    }
+    .check-icon {
+      position: absolute;
+      top: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: white;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .check-icon img {
+      width: 50px;
+    }
+    .card ul {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+    .card ul li {
+      margin-bottom: 8px;
+    }
+    .card .success {
+      font-weight: bold;
+      color: green;
+      margin-bottom: 15px;
+    }
+    .card button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      background: #1a1a1a;
+      color: white;
+      padding: 30px 20px;
+    }
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: space-between;
+    }
+    .footer-content > div {
+      min-width: 200px;
+    }
+    .footer-content h4 {
+      margin-bottom: 10px;
+    }
+    .newsletter input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 5px;
+    }
+    .newsletter button {
+      background-color: crimson;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+    .copyright {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 12px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Halaman berhasil transaksi</header>
+  <div class="top-bar">
+    <a href="#">&larr;</a> Transaction
+  </div>
+
+  <div class="background">
+    <div class="card">
+      <div class="check-icon">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Yes_Check_Circle.svg/1024px-Yes_Check_Circle.svg.png" alt="Check" />
+      </div>
+      <ul>
+        <li><strong>Name:</strong> </li>
+         <li><strong>Mobile Phone Number:</strong> </li>
+        <li><strong>Room Number:</strong> </li>
+         <li><strong>Name Of Room:</strong> </li>
+        <li><strong>Order Date:</strong> </li>
+        <li><strong>Number Of Orders:</strong> </li>
+      </ul>
+      <div class="success">Success!   
+      </div>
+      <button>Next</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div>
+        <h3>Puramevi Hotel</h3>
+        <p>Be Part of the Puramevi Experience</p>
+        <div>🔵 🟣 🔴</div>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li>Home Page</li>
+          <li>Room Type</li>
+          <li>Our Service</li>
+          <li>Hotel Contact</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Call: 0891-7799-990</p>
+        <p>Email: puramevihotel@hotel.com</p>
+        <p>Jl. Hotel Damai No.4A</p>
+      </div>
+      <div class="newsletter">
+        <h4>Get the latest information</h4>
+        <input type="email" placeholder="Enter email">
+        <button>Kirim email</button>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; Puramevi Hotel 2025. All Right Reserved
+    </div>
+  </footer>
+
+</body>
+</html>
